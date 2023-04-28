@@ -1,9 +1,12 @@
 import React from 'react'
 import Card from '../(shared)/Card';
+import { Post } from '@prisma/client';
 
-type Props = {}
+type Props = {
+  literaturePosts: Post[],
+}
 
-const Literature = (props: Props) => {
+const Literature = ({ literaturePosts }: Props) => {
   return (
     <section className="mt-10">
       <hr className="border-1" />
@@ -20,23 +23,23 @@ const Literature = (props: Props) => {
         <Card
           className="bg-wh-500 basis-1/3 mt-5 sm:mt-0"
           imageHeight="h-80"
-        //   post={travelPosts[0]}
+          post={literaturePosts[0]}
         />
         <Card
           className="bg-wh-500 basis-1/3 mt-5 sm:mt-0"
           imageHeight="h-80"
-        //   post={travelPosts[1]}
+          post={literaturePosts[1]}
         />
         <Card
           className="bg-wh-500 basis-1/3 mt-5 sm:mt-0"
           imageHeight="h-80"
-        //   post={travelPosts[2]}
+          post={literaturePosts[2]}
         />
       </div>
       <Card
         className="bg-wh-500 sm:flex justify-between items-center gap-3 mt-7 mb-5"
         imageHeight="h-80"
-        // post={travelPosts[3]}
+        post={literaturePosts[3]}
       />
     </section>
   )
