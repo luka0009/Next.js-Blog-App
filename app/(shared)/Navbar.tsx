@@ -24,13 +24,17 @@ const Navbar = (props: Props) => {
       <div className="flex justify-between gap-8 mt-5 mb-4 mx-10">
         <div className="basis-2/3 md:mt-3">
           <h1 className="font-bold text-3xl md:text-5xl">
-            AI written blog about literature
+            AI written blogs
           </h1>
-          <p className="text-sm mt-3">essays, articles, poetry and many more</p>
+          <p className="text-sm mt-3">Blogs, essays, articles and many more</p>
         </div>
         <div className="basis-full relative w-auto h-32 bg-wh-500">
-          <div className="bg-red w-16 h-16">
-          </div>
+        {/* <Image
+          src="https://www.shutterstock.com/image-illustration/drapery-fabric-stripes-3d-illustration-600w-1621785067.jpg"
+          alt="Picture of the author"
+          width={500}
+          height={500}
+          /> */}
         </div>
       </div>
       <hr className="border-1 mx-10" />

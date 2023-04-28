@@ -3,9 +3,14 @@ const nextConfig = {
   experimental: {
     appDir: true,
     images: {
-      domains: [
-        'res.cloudinary.com', 
-      ]
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: 'www.shutterstock.com',
+          port: '',
+          pathname: '/image-illustration/drapery-fabric-stripes-3d-illustration-600w-1621785067.jpg',
+        },
+      ],
     }
   },
 };
